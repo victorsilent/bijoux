@@ -1,0 +1,33 @@
+//Responsiveness
+$mobile: 450px;
+$tablet: 768px;
+$desktop: 1024px;
+$large-screen: 1200px;
+
+//Misc
+
+//Typography
+$font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$paragraph-color: #3f4852;
+
+//Color
+$primary: #54a0ff;
+$primary-hovered: #2e86de;
+$secundary: #ff6b6b;
+$secundary-hovered: #ee5253;
+$alert: $secundary-hovered;
+$info: #1dd1a1;
+$info-hovered: #10ac84;
+$soft-gray: #c8d6e5;
+
+
+//Grid
+$column-number: 12;
+$sizes-list: 'mobile', 'tablet', 'desktop', 'largescreen';
+$column-gap: 0.5rem;
+$container-size: 60rem;
+$gap-container: 2rem;
+
+
+
+//Forms

@@ -1,0 +1,16 @@
+@import "./variables/_variables";
+@import "./mixins/_query";
+@import "./general/_sample-config";
+@import "./general/_typography";
+@import "./general/_grid";
+
+
+*{
+    box-sizing: border-box;
+}
+
+.color{
+    background: #48dbfb;
+    padding: 25px;
+    width: 100%;
+}

@@ -1,0 +1,101 @@
+.container{
+    margin: 0 auto;
+    width: $container-size;
+    &--fluid{
+        width: auto;
+        margin: 0 $gap-container;
+        @include tablet-down{
+            margin: 0 ($gap-container / 2);
+        }
+    }
+}
+
+//Row of grid
+.row{
+    margin-left: -$column-gap;
+    margin-right: -$column-gap;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+//Row types
+.is-multline{
+    flex-wrap: wrap;
+}
+
+.no-gutter{
+    margin-left: 0;
+    margin-right: 0;
+    > .column{
+        padding: 0;
+    }
+}
+
+.column{
+    display: flex;
+    flex-basis: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: $column-gap;
+    width: 100%;
+}
+
+@include mobile-up {
+    @for $i from 1 through $column-number{
+        .column-mobile-#{$i}{
+            width: percentage($i / $column-number);
+            flex: none;
+        }
+    }
+}
+@include tablet-up {
+    @for $i from 1 through $column-number{
+        .column-tablet-#{$i}{
+            width: percentage($i / $column-number);
+            flex: none;
+            background: #0f0;
+        }
+    }
+}
+@include desktop-up {
+    @for $i from 1 through $column-number{
+        .column-desktop-#{$i}{
+            width: percentage($i / $column-number);
+            flex: none;
+        }
+    }
+}
+@include large-screen-up {
+    @for $i from 1 through $column-number{
+        .column-largescreen-#{$i}{
+            width: percentage($i / $column-number);
+            flex: none;
+            
+        }
+    }
+}
+
+@for $i from 1 through $column-number{
+    .column-#{$i}{
+        width: percentage($i / $column-number);
+        flex: none;
+    }
+}
+
+
+
+
+
+//Named Sizes (Inspired in Bulma Framework)
+.half{
+    flex: none;
+    width: 50%;
+}
+.one-third{
+    flex: none;
+    width: 33.3333%;
+}
+.two-third{
+    flex: none;
+    width: 66.6666%;
+}
