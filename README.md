@@ -11,7 +11,7 @@
 
 
 
-Yes! Another CSS framework! But without difference from any other. This framework is only a case study :)
+Yes! Another CSS framework! But with no difference from any other. This framework is only a case study :)
 
 # WIP
 
