@@ -31,6 +31,7 @@
     }
 }
 
+//Columns
 .column{
     display: flex;
     flex-basis: 1;
@@ -40,6 +41,10 @@
     width: 100%;
 }
 
+/*
+ Generate columns named as column-breakpointName-size
+ Ex: column-desktop-10
+*/
 @include mobile-up {
     @for $i from 1 through $column-number{
         .column-mobile-#{$i}{
@@ -53,7 +58,6 @@
         .column-tablet-#{$i}{
             width: percentage($i / $column-number);
             flex: none;
-            background: #0f0;
         }
     }
 }
@@ -75,6 +79,10 @@
     }
 }
 
+/*
+ Generate columns named as column-4, column-5, column-10
+ Max size: 12
+*/
 @for $i from 1 through $column-number{
     .column-#{$i}{
         width: percentage($i / $column-number);
@@ -83,10 +91,10 @@
 }
 
 
-
-
-
-//Named Sizes (Inspired in Bulma Framework)
+/*
+  Named Sizes (Inspired in Bulma Framework)
+  TODO: create all named size
+*/
 .half{
     flex: none;
     width: 50%;
