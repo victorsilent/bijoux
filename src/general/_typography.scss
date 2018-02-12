@@ -38,4 +38,22 @@ h6{
 
 p{
     color: $paragraph-color;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+pre, code{
+  font-family: $font-family;
+  border-left: 5px solid darken($semi-white, 4);
+  border-right: 5px solid darken($semi-white, 4);
+  padding: 10px;
+  white-space: normal;
+  background-color: $semi-white;
+}
+
+//Helper weight
+@each $weight in $weights{
+  .weight-#{$weight}{
+    font-weight: #{$weight};
+  }
 }
