@@ -1,0 +1,32 @@
+.button{
+  color: #fff;
+  padding: 10px 15px;
+  background-color: $primary;
+  border-radius: 2px;
+  letter-spacing: 0.01em;
+  transition: background-color 300ms ease;
+  &:hover, &:focus{
+    background-color: $primary-hovered;
+    color: #fff;
+  }
+  +.alert{
+    background-color: $secundary;
+    &:hover{
+      background-color: $secundary-hovered;
+    }
+  }
+  +.success{
+    background-color: $success;
+    &:hover{
+      background-color: $success-hovered;
+    }
+  }
+  +.white-clean{
+    background-color: $semi-white;
+    color: lighten($paragraph-color, 20);
+    &:hover{
+      background-color: $soft-gray;
+      color: lighten($paragraph-color, 10);
+    }
+  }
+}

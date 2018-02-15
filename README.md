@@ -19,9 +19,9 @@ Yes! Another CSS framework! But with no difference from any other. This framewor
     * Base colors, font-family, sizes, gaps and more.
 - [x] Grid
     * Grid with four sizes: mobile, tablet, desktop and large screens
-- [ ] Typography
-- [ ] Buttons
-- [ ] Lists
-- [ ] Forms
+- [X] Typography
+- [X] Buttons
+- [X] Lists
+- [current] Forms
 - [ ] Codes
 - [ ] Utilities

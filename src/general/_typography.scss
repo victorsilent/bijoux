@@ -51,6 +51,13 @@ pre, code{
   background-color: $semi-white;
 }
 
+a{
+  text-decoration: none;
+  color: $primary;
+  &:hover, &:focus{
+    color: $primary-hovered;
+  }
+}
 //Helper weight
 @each $weight in $weights{
   .weight-#{$weight}{
