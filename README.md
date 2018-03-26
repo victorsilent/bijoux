@@ -3,7 +3,7 @@
 <div style="text-align: center"><img src="assets/raccoon.png"></div>
 
 
-<center><h1>Bijoux - Case study CSS Framework</h1></center>
+<center><h1>Bijux - Case study CSS Framework</h1></center>
 
 
 
